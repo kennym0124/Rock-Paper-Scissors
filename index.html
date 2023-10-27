@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script defer src="/js/script.js"></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container" style="border-style: dotted; border-color: green;">
+        <div class="header" style="border-style: dotted; border-color: red;">Rock Paper Scissors</div>
+        <div class="playButtonBox" style="border-style: dotted; border-color: pink;">
+            <div class="startButton" style="border-style: dotted; border-color: blue;">
+                <button type="button">Play</button>
+            </div>
+        </div>
+        <div class="gameArea" style="border-style: dotted; border-color: purple;">
+            <div class="mainText" style="border-style: dotted; border-color: orange;">
+                <h1>Make Your Choice.</h1>
+                <p>First To 5 Wins!</p>
+            </div>
+            <div class="playBox" style="border-style: dotted; border-color: lightcoral;">
+                <div class="player" style="border-style: dotted; border-color: burlywood;">
+                    <div class="playerOptions" style="border: solid white 1px; border-radius: 10px">
+                        <button type="button" id="rock" class="btn"><img src="/img/rock.png"></button>
+                        <button type="button" id="paper" class="btn"><img src="/img/paper.png"></button>
+                        <button type="button" id="scissors" class="btn"><img src="/img/scissors.png"></button>
+                    </div>
+                    
+                </div>
+                <div class="gameResults" style="border: solid white 1px; border-radius: 5px">          
+                    <div class="roundResults" style="border-style: dotted; border-color: red;">
+                        <p>Pick a weapon to get started!</p>
+                    </div>
+                    <div class="playerScoreCounter" style="border-style: dotted; border-color: purple;">
+                        <p></p>
+                    </div>
+                    <div class="compScoreCounter" style="border-style: dotted; border-color: purple;">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="compChoice" style="border: solid white 1px; border-radius: 3.5px">
+                    <img src="/img/paper.png" id="compChoiceImage" style="transform: scaleX(-1); width: auto; height: 150px; vertical-align: middle;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
