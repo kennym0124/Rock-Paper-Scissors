@@ -16,20 +16,34 @@ function playGame(playerChoice, compChoice){
     playerScoreText.textContent = "Player Score: " + playerScore;
     compScoreText.textContent = "CPU Score: " + compScore;
     if(playerScore == 5){
-        buttons.disabled = true;
         gameResults.textContent = "Congratulations! You won!";
+        gameResults.style.fontSize = "50px";
         playerScore = 0;
         compScore = 0;
         playerScoreText.textContent = "Player Score: " + playerScore;
         compScoreText.textContent = "CPU Score: " + compScore;
+        console.log("disabling buttons");
+        compChoiceImage.hidden = true;
+        buttons.forEach((button) => {
+            button.disabled = true;
+            button.hidden = true;
+            button.classList.remove("hover");
+        });
     }
     else if(compScore == 5){
-        buttons.disabled = true;
         gameResults.textContent = "You Lose!";
         playerScore, compScore = 0;
         playerScoreText.textContent = "Player Score: ${playerScore}";
         compScoreText.textContent = "CPU Score: ${compScore}";
+        console.log("disabling buttons");
+        compChoiceImage.hidden = true;
+        buttons.forEach((button) => {
+            button.disabled = true;
+            button.hidden = true;
+            button.classList.remove("hover");
+        });
     }
+
 }
 
 function playRound(playerChoice, compChoice){    
