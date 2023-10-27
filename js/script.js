@@ -16,7 +16,7 @@ function playGame(playerChoice, compChoice){
     playerScoreText.textContent = "Player Score: " + playerScore;
     compScoreText.textContent = "CPU Score: " + compScore;
     if(playerScore == 5){
-        buttons.disabled = "disabled";
+        buttons.disabled = true;
         gameResults.textContent = "Congratulations! You won!";
         playerScore = 0;
         compScore = 0;
@@ -24,7 +24,7 @@ function playGame(playerChoice, compChoice){
         compScoreText.textContent = "CPU Score: " + compScore;
     }
     else if(compScore == 5){
-        buttons.disabled = "disabled";
+        buttons.disabled = true;
         gameResults.textContent = "You Lose!";
         playerScore, compScore = 0;
         playerScoreText.textContent = "Player Score: ${playerScore}";
