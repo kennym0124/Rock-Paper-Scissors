@@ -32,6 +32,7 @@ function playGame(playerChoice, compChoice){
     }
     else if(compScore == 5){
         gameResults.textContent = "You Lose!";
+        gameResults.style.fontSize = "50px";
         playerScore, compScore = 0;
         playerScoreText.textContent = "Player Score: ${playerScore}";
         compScoreText.textContent = "CPU Score: ${compScore}";
